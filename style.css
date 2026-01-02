@@ -14,9 +14,8 @@
   outline: none;
   border: none;
   text-decoration: none;
-  text-transform: capitalize;
   transition: 0.2s linear;
-  font-family: "Roboto", sans-serif;
+  font-family: "family", sans-serif;
 }
 
 body {
@@ -183,8 +182,8 @@ video {
 
 .content p {
   color: var(--main-color);
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 2.5rem;
+  font-weight: 600;
   line-height: 1.8;
   padding: 1rem 0;
 }
@@ -236,7 +235,7 @@ video {
 }
 
 .about .row .content p {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: var(--main-color);
   padding: 1rem 0;
   line-height: 1.8;
@@ -376,7 +375,7 @@ footer {
 }
 
 .footer > p {
-  color: var(--white);
+  color: #fff;
   font-size: 1.5rem;
   text-transform: initial;
 }
@@ -420,12 +419,20 @@ footer {
 .titulo span {
   color: #daa520;
 }
+.footer h4 {
+  color: #daa520;
+  font-size: 2.5rem;
+  text-transform: initial;
+}
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 768px) {
   .home-container section > img {
     width: 320px;
   }
 
+  .endereco {
+    scroll-margin-top: 100px;
+  }
   .header section {
     flex-direction: column;
   }
@@ -493,5 +500,14 @@ footer {
 @media screen and (max-width: 320px) {
   .home-container section .content a {
     font-size: 1.4rem;
+  }
+}
+@media (max-width: 768px) {
+  .modal {
+    display: none;
+  }
+
+  .mascara {
+    display: none;
   }
 }
