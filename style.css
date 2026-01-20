@@ -211,6 +211,7 @@ video {
   justify-content: space-around;
   padding: 1rem;
   background-color: var(--black);
+  overflow: hidden;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -218,6 +219,7 @@ video {
 .about .row img {
   width: 400px;
   border-radius: 5px;
+  object-fit: cover;
 }
 
 .about .row .row-img img {
@@ -248,7 +250,8 @@ video {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
